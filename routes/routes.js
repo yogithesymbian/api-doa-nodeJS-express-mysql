@@ -8,5 +8,7 @@ module.exports = function (app) {
 
   app.route("/users").get(todoList.users);
 
-  app.route("/doa").get(homeDoa.showDoa);
+  app.route("/doa").get(homeDoa.showDoaDetail);
+
+  app.route("/doalist").get(homeDoa.showDoa);
 };
