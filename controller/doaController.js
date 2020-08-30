@@ -8,7 +8,10 @@ exports.showDoa = function (req, res) {
     if (error) {
       console.log(error);
     } else {
-      response.ok(rows, res, "show doa", "responseDoa");
+      const resData = {
+        listDoa: rows,
+      };
+      response.ok(rows, res, "show doa", resData);
     }
   });
 };
