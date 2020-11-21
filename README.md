@@ -26,6 +26,8 @@ WorkingDirectory=/var/www/html/api/nodejs/api-doa-nodeJS-express-mysql
 WantedBy=multi-user.target
 ```
 
+Put this in /etc/systemd/system/node-app-1.service
+
 Then run the following to start both instances of our node application
 
 `$ systemctl start node-app-1`
